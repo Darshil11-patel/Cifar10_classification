@@ -31,7 +31,7 @@ sgd = SGD(lr=lrate, momentum=0.9, decay=decay, nesterov=False)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 
-model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=100, batch_size=32) 
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=25, batch_size=32) 
 
 # Final evaluation of the model 
 scores = model.evaluate(X_test, y_test, verbose=0) 
